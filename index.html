@@ -3,13 +3,11 @@
 <html lang="en">
   
   <head>
-  
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
-  
   </head>
  
   <body>
@@ -18,6 +16,7 @@
       <h1>Prework Study Guide</h1>
       <!-- Original img address not showing up on study guide. Copied example img from canvas page -->
       <img src="https://bootcampspot.instructure.com/courses/4700/files/2747161/preview" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     
     <main>
@@ -27,14 +26,16 @@
         <ul>
           <li>The head element contains information about the webpage.</li>
           <li>The body element represents the visible content shown to the user.</li>
-          <li>we can use semantic HTML elements to indicate the role of their content, as well as to give structure to the content of the webpage.</li>
+          <li>We can use semantic HTML elements to indicate the role of their content, as well as to give structure to the content of the webpage.</li>
         </ul>
       </section>
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li>To link CSS to HTML, we use the element "link" in the "head" section of HTML with rel="stylsheet" and href="[stylesheet location]"</li>
         </ul>
       </section>
 
@@ -43,18 +44,31 @@
         <ul>
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li>typing 'git add -A' will commit all files to the working branch</li>
-          <li>'git commit -m ""' will commit the changes to the repository</li>
-          <li>always use 'git pull origin main' before pushing to pull the base branch into your current branch</li>
-          <li>use 'git push origin (name of branch)' to push your commit</li>
-          <li>update the local repository by using 'git checkout main' and then 'git pull origin main'</li>
+          <li>Typing 'git add -A' will commit all files to the working branch</li>
+          <li>'git commit -m' will commit the changes to the repository</li>
+          <li>Always use 'git pull origin main' before pushing to pull the base branch into your current branch</li>
+          <li>Use 'git push origin (name of branch)' to push your commit</li>
+          <li>Update the local repository by using 'git checkout main' and then 'git pull origin main'</li>
         </ul>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>To link JavaScript to HTML, we use the element "script" within the "body" element of the HTML document with src="[Javascript location]</li>
+          <li>An array can hold various types of data that all use one variable. This is done by using var variable-name=["name", "name", "name"]</li>
+          <li>Arrays: each item in an array is assigned a number that starts from 0 and goes up a whole number for each item within the array. An array might be constructed like this:</br></br>
+            var shapes = ["triangle", "square", "pentagon", "circle"];</br></br></li>
+          <li>For Statements: these statemetns can list items in an array by using a loop. a loop can be created from an array as follows:</br></br>
+            var shapes = ["triangle", "square", "pentagon", "circle"];</br></br>
+            for (var x = 0; x < shapes.length; x++) {</br></br>
+              &nbsp;&nbsp;&nbsp;console.log(shapes[x]);</br></br>
+            }</br></br>
+            The "var x = 0" defines the starting point and identifies which index of the array to target first, 
+            "x < shapes.length" gives a boolean comparison, which is essential a condition for how many times the loop will repeat, where "shapes" is the variable of the entire array 
+            and "length" is the amount of variables within the array, where the loop will repeat as long as the length of the array is more than x,
+            and "x++", shorthand for "x + 1" is what will occur every time the loop runs. so in short, a loop will go like this:</br></br>
+            for ([starting point], [sets limits for the loop], [what happens for every loop])</li>
         </ul>
       </section>
     
@@ -63,6 +77,8 @@
     <footer>
       <p>I can code!!</p>
     </footer>
+
+    <script src="./assets/script.js"></script>
  
   </body>
 
